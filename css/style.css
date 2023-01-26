@@ -29,8 +29,9 @@ body {
 }
 
 .btn {
-  max-width: 400px;
-  width: 100%;
+  width: 400px;
+  height: 400px;
+  background: url(../img/heart2.png) no-repeat center/400px;
 }
 
 .header {
@@ -150,6 +151,7 @@ body {
     width: 100%;
   }
   .btn {
-    max-width: 300px;
+    width: 300px;
+    height: 300px;
   }
 }/*# sourceMappingURL=style.css.map */
