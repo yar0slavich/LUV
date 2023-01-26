@@ -24,12 +24,12 @@ body
         justify-content: center
         position: relative
         height: 100vh
-        background: #ebd6ea url(../img/2.png) no-repeat center / cover
+        background: #ebd6ea url(../img/2.webp) no-repeat center / cover
 
 .btn 
-    width: 400px
-    height: 400px
-    background: url(../img/heart2.png) no-repeat center / 400px
+    width: calc(var(--index) * 20)
+    height: calc(var(--index) * 20)
+    background: url(../img/heart2.webp) no-repeat center / cover
 
 .header 
     position: relative
@@ -39,7 +39,7 @@ body
         z-index: 10
         width: 100%
         height: calc(var(--index) * 15)
-        background: url(../img/4.png) no-repeat center / cover
+        background: url(../img/4.webp) no-repeat center / cover
         bottom: calc(var(--index) * -6)
 
 .layers, .article 
@@ -61,11 +61,11 @@ body
 .layers__base 
     transform: translate3d(0, calc(var(--scrollTop) / 1.5), 0)
     z-index: 0
-    background: url(../img/3.png) no-repeat center / cover
+    background: url(../img/3.webp) no-repeat center / cover
 
 .layers__front 
     transform: translate3d(0, calc(var(--scrollTop) / 5), 0)
-    background: url(../img/5.png) no-repeat center / cover
+    background: url(../img/5.webp) no-repeat center / cover
 
 .layer__header 
     z-index: 1
@@ -79,5 +79,5 @@ body
     letter-spacing: calc(var(--index) * 0.5)
 
 .article 
-    background: url(../img/2.png) no-repeat center / cover 
+    background: url(../img/2.webp) no-repeat center / cover 
 

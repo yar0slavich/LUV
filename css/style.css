@@ -25,13 +25,13 @@ body {
   justify-content: center;
   position: relative;
   height: 100vh;
-  background: #ebd6ea url(../img/2.png) no-repeat center/cover;
+  background: #ebd6ea url(../img/2.webp) no-repeat center/cover;
 }
 
 .btn {
-  width: 400px;
-  height: 400px;
-  background: url(../img/heart2.png) no-repeat center/400px;
+  width: calc(var(--index) * 20);
+  height: calc(var(--index) * 20);
+  background: url(../img/heart2.webp) no-repeat center/cover;
 }
 
 .header {
@@ -43,7 +43,7 @@ body {
   z-index: 10;
   width: 100%;
   height: calc(var(--index) * 15);
-  background: url(../img/4.png) no-repeat center/cover;
+  background: url(../img/4.webp) no-repeat center/cover;
   bottom: calc(var(--index) * -6);
 }
 
@@ -68,12 +68,12 @@ body {
 .layers__base {
   transform: translate3d(0, calc(var(--scrollTop) / 1.5), 0);
   z-index: 0;
-  background: url(../img/3.png) no-repeat center/cover;
+  background: url(../img/3.webp) no-repeat center/cover;
 }
 
 .layers__front {
   transform: translate3d(0, calc(var(--scrollTop) / 5), 0);
-  background: url(../img/5.png) no-repeat center/cover;
+  background: url(../img/5.webp) no-repeat center/cover;
 }
 
 .layer__header {
@@ -90,7 +90,7 @@ body {
 }
 
 .article {
-  background: url(../img/2.png) no-repeat center/cover;
+  background: url(../img/2.webp) no-repeat center/cover;
 }
 
 .btn {
@@ -134,7 +134,6 @@ body {
 .swiper-slide > img {
   max-width: 600px;
   width: 100%;
-  border-radius: 10px;
 }
 
 .swiper-slide-shadow-top,
@@ -144,14 +143,17 @@ body {
 
 @media screen and (max-width: 786px) {
   .swiper {
-    width: 320px !important;
+    width: 425px !important;
   }
   .swiper-slide > img {
-    max-width: 310px !important;
-    width: 100%;
+    max-width: 420px !important;
   }
-  .btn {
-    width: 300px;
-    height: 300px;
+}
+@media screen and (max-width: 425px) {
+  .swiper {
+    width: 310px !important;
+  }
+  .swiper-slide > img {
+    max-width: 300px !important;
   }
 }/*# sourceMappingURL=style.css.map */
